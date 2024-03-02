@@ -1,0 +1,183 @@
+@import "Var.scss";
+
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: var(--sans);
+    background-color: var(--clr-bg-100);
+    font-weight: 700;
+    min-height: 100svh;
+}
+main{
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    padding-block-start: 80px;
+    section{
+        background-color: var(--clr-bg-100);
+        color: var(--clr-txt-200);
+        max-width: 400px;
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            color: var(--clr-txt-100);
+            h2{
+                font-size: 2rem;
+            }
+            .theme-setup{
+                display:flex;
+                align-items: flex-end;
+                gap: 2rem;
+                color: var(--clr-txt-100);
+                .title{
+                    padding: 0.5rem 0;
+                }
+                .setup {
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        margin-block-end: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.small{
+    font-size: 1.5rem !important;
+    @include desktop{
+        font-size: 2rem !important;
+    }
+}
+.hide-it{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.theme-1{
+    header{
+        h2{
+            color:var(--clr-txt-200); 
+        }
+        .theme-setup{
+            color:var(--clr-txt-200);  
+        }
+    }
+    .screen-container{
+        p{
+            color:var(--clr-txt-200); 
+        }
+    }
+}
+
+.screen-container{
+    background-color:  var(--clr-bg-200);
+    border-radius: 10px;
+    margin-block-start: 2rem;
+    position: relative;
+    p{
+        font-size:0.8rem;
+        max-width: 100%;
+        padding: 2rem;
+        text-align: right;
+        font-size: 3rem;
+        color:var(--clr-txt-100);
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}
+
+.range{
+    input{
+        appearance: none;
+        background-color: var(--clr-bg-200);
+        height: 26px;
+        padding-inline: 0.5rem;
+        border-radius: 1.45rem;
+        max-width: 5rem;
+        &::-webkit-slider-thumb{
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background-color:var(--clr-keys-equal-normal);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background-color: var(--clr-keys-equal-hover);
+            }
+        }
+    }
+}
+ul{
+    list-style:none;
+    user-select: none;
+    &.calc-grid{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 1rem;
+        background-color: var(--clr-bg-200);
+        border-radius:10px;
+        padding: 2rem;
+        margin-block-start: 2rem;
+        li{
+            min-width: 66px;
+            height: 60px;
+            border-radius: 7px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow:0 5px 0 var(--clr-keys-500);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .ntr{
+            background-color: var(--clr-keys-nmbr-normal);
+            box-shadow:0 5px 0 var(--clr-keys-nmbr-shadow);
+            color: var(--clr-txt-100);
+            &:hover{
+                background-color: var(--clr-keys-nmbr-hover);
+                box-shadow:0 5px 0 var(--clr-keys-nmbr-hover-shadow);
+            }
+        }
+        .reset{
+            background-color: var(--clr-keys-reset-normal);
+            box-shadow:0 5px 0 var(--clr-keys-reset-shadow);
+            color: var(--clr-txt-400);
+           &:hover{
+            background-color: var(--clr-keys-reset-hover);
+        }
+        }
+        .col-2{
+            grid-column:  span 2;
+        }
+        .equal{
+            background-color: var(--clr-keys-equal-normal);
+            box-shadow:0 5px 0 var(--clr-keys-equal-shadow);
+            color: var(--clr-txt-300);
+            &:hover{
+                background-color: var(--clr-keys-equal-hover);
+            }
+        }
+    }
+}
+
+@include desktop{
+    main{
+        section{
+            min-width: 544px;
+        }
+    }
+}

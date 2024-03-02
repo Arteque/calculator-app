@@ -1,0 +1,54 @@
+:root {
+  --clr-bg-100:hsl(222, 26%, 31%);
+  --clr-bg-200:hsl(223, 31%, 20%);
+  --clr-bg-300:hsl(224, 36%, 15%);
+  --clr-keys-reset-normal:hsl(224, 21%, 50%);
+  --clr-keys-reset-shadow:hsl(223, 22%, 38%);
+  --clr-keys-reset-hover:hsl(227, 49%, 76%);
+  --clr-keys-nmbr-normal:hsl(32, 26%, 89%);
+  --clr-keys-nmbr-shadow:hsl(30, 15%, 64%);
+  --clr-keys-nmbr-hover:hsl(0, 0%, 100%);
+  --clr-keys-nmbr-hover-shadow:hsl(30, 15%, 64%);
+  --clr-keys-equal-normal:hsl(25, 99%, 39%);
+  --clr-keys-equal-shadow:hsl(26, 99%, 27%);
+  --clr-keys-equal-hover:hsl(6, 93%, 67%);
+  --clr-txt-100:hsl(221, 14%, 31%);
+  --clr-txt-200:hsl(0, 0%, 100%);
+  --sans: "League Spartan", sans-serif;
+}
+
+body.theme-2 {
+  --clr-bg-100:hsl(0, 0%, 90%);
+  --clr-bg-200:hsl(0, 5%, 81%);
+  --clr-bg-300:hsl(0, 0%, 93%);
+  --clr-keys-reset-normal:hsl(185, 41%, 37%);
+  --clr-keys-reset-shadow:hsl(186, 58%, 25%);
+  --clr-keys-reset-hover:hsl(185, 41%, 56%);
+  --clr-keys-nmbr-normal:hsl(48, 9%, 89%);
+  --clr-keys-nmbr-shadow:hsl(30, 10%, 61%);
+  --clr-keys-nmbr-hover:hsl(0, 0%, 100%);
+  --clr-keys-nmbr-hover-shadow:hsl(30, 10%, 61%);
+  --clr-keys-equal-normal:hsl(25, 99%, 39%);
+  --clr-keys-equal-shadow:hsl(25, 100%, 26%);
+  --clr-keys-equal-hover:hsl(25, 100%, 61%);
+  --clr-txt-100:hsl(60, 10%, 19%);
+  --clr-txt-200:hsl(0, 0%, 100%);
+}
+body.theme-3 {
+  --clr-bg-100:hsl(268, 75%, 9%);
+  --clr-bg-200:hsl(268, 71%, 12%);
+  --clr-keys-reset-normal:#56077C;
+  --clr-keys-reset-shadow:#BF15F4;
+  --clr-keys-reset-hover:#8631B0;
+  --clr-keys-nmbr-normal:#331B49;
+  --clr-keys-nmbr-shadow:#861B9F;
+  --clr-keys-nmbr-hover:#8631AE;
+  --clr-keys-nmbr-hover-shadow:#BF15F4;
+  --clr-keys-equal-normal:#00DECF;
+  --clr-keys-equal-shadow:#6DF8EF;
+  --clr-keys-equal-hover:#94FFF9;
+  --clr-txt-100:hsl(52, 100%, 62%);
+  --clr-txt-200:hsl(290, 70%, 36%);
+  --clr-txt-300:hsl(198, 20%, 13%);
+  --clr-txt-400:hsl(0, 0%, 100%);
+}/*# sourceMappingURL=Var.css.map */

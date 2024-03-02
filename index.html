@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./App.css">
+    <title>Calculator app</title>
+</head>
+<body class="theme-1">
+    <h1 class="hide-it">Calculator app</h1>
+        <main>
+            <section>
+                <header>
+                    <h2>calc</h2>
+                    <div class="theme-setup">
+                        <h3 class="title uppercase">Theme</h3>
+                        <div class="setup">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <div class="range">
+                               <input type="range" min="0" max="2" value="0" data-value="0">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="screen-container">
+                    <p data-value="0">
+                       0
+                    </p>
+                </div>
+                <div class="content">
+                    <ul class="calc-grid">
+                        <li class="ntr number">7</li>
+                        <li class="ntr number">8</li>
+                        <li class="ntr number">9</li>
+                        <li class="uppercase reset small del">Del</li>
+                        <li class="ntr number">4</li>
+                        <li class="ntr number">5</li>
+                        <li class="ntr number">6</li>
+                        <li class="ntr operator">+</li>
+                        <li class="ntr number">1</li>
+                        <li class="ntr number">2</li>
+                        <li class="ntr number">3</li>
+                        <li class="ntr operator">-</li>
+                        <li class="ntr number">.</li>
+                        <li class="ntr number">0</li>
+                        <li class="ntr operator">/</li>
+                        <li class="ntr operator">*</li>
+                        <li class="uppercase reset small col-2 totalReset">Reset</li>
+                        <li class="uppercase equal col-2">=</li>
+                    </ul>   
+                </div>
+            </section>
+        </main>
+    <script src="./App.js"></script>
+</body>
+</html>

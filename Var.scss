@@ -1,0 +1,106 @@
+//theme 1 Default
+$clrs:(
+    bg:(
+        100:hsl(222, 26%, 31%),
+        200:hsl(223, 31%, 20%),
+        300:hsl(224, 36%, 15%)
+    ),
+    keys:(
+        reset-normal:hsl(224, 21%, 50%),
+        reset-shadow: hsl(223, 22%, 38%),
+        reset-hover:hsl(227, 49%, 76%),
+        nmbr-normal:hsl(32, 26%, 89%),
+        nmbr-shadow:hsl(30, 15%, 64%),
+        nmbr-hover:hsl(0, 0%, 100%),
+        nmbr-hover-shadow:hsl(30, 15%, 64%),
+        equal-normal:hsl(25, 99%, 39%),
+        equal-shadow:hsl(26, 99%, 27%),
+        equal-hover:hsl(6, 93%, 67%),
+    ),
+    txt:(
+        100:hsl(221, 14%, 31%),
+        200:hsl(0, 0%, 100%),
+         
+    )
+);
+$theme2:(
+    bg:(
+        100:hsl(0, 0%, 90%),
+        200:hsl(0, 5%, 81%),
+        300:hsl(0, 0%, 93%)
+    ),
+    keys:(
+        reset-normal:hsl(185, 41%, 37%),
+        reset-shadow: hsl(186, 58%, 25%) ,
+        reset-hover:hsl(185, 41%, 56%),
+        nmbr-normal:hsl(48, 9%, 89%),
+        nmbr-shadow:hsl(30, 10%, 61%),
+        nmbr-hover:hsl(0, 0%, 100%),
+        nmbr-hover-shadow:hsl(30, 10%, 61%),
+        equal-normal:hsl(25, 99%, 39%),
+        equal-shadow:hsl(25, 100%, 26%),
+        equal-hover:hsl(25, 100%, 61%),
+    ),
+    txt:(
+        100:hsl(60, 10%, 19%),
+        200:hsl(0, 0%, 100%)
+    )
+);
+
+$theme3:(
+    bg:(
+        100:hsl(268, 75%, 9%),
+        200:hsl(268, 71%, 12%),
+        
+    ),
+    keys:(
+        reset-normal:#56077C,
+        reset-shadow: #BF15F4,
+        reset-hover:#8631B0,
+        nmbr-normal:#331B49,
+        nmbr-shadow:#861B9F,
+        nmbr-hover:#8631AE,
+        nmbr-hover-shadow:#BF15F4,
+        equal-normal:#00DECF,
+        equal-shadow:#6DF8EF,
+        equal-hover:#94FFF9,
+    ),
+    txt:(
+        100:hsl(52, 100%, 62%),
+        200:hsl(290, 70%, 36%),
+        300:hsl(198, 20%, 13%),
+        400:hsl(0, 0%, 100%),
+    )
+);
+
+
+@mixin desktop{
+    @media screen and ( min-width: 900px ){@content;}
+}
+
+:root{
+    @each $clr, $vls in $clrs{
+        @each $subclr, $subvls in $vls{
+            --clr-#{$clr}-#{$subclr}:#{$subvls};
+        }
+    }
+    --sans: "League Spartan", sans-serif;
+}
+
+body{
+    &.theme-2{
+        @each $clr, $vls in $theme2{
+            @each $subclr, $subvls in $vls{
+                --clr-#{$clr}-#{$subclr}:#{$subvls};
+            }
+        }
+    }
+    &.theme-3{
+        @each $clr, $vls in $theme3{
+            @each $subclr, $subvls in $vls{
+                --clr-#{$clr}-#{$subclr}:#{$subvls};
+            }
+        }
+    }
+}
+
