@@ -271,4 +271,71 @@ ul.calc-grid .equal:hover {
   main section {
     min-width: 544px;
   }
+}
+footer {
+  padding-block: 1rem;
+  background-color: var(--clr-bg-200);
+}
+
+.attribution {
+  max-width: 300px;
+  margin-inline: auto;
+}
+.attribution .main {
+  font-size: smaller;
+  text-align: center;
+  color: var(--clr-ntr-blue-200);
+}
+.attribution .main a {
+  color: var(--clr-txt-100);
+  text-decoration: underline;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  display: block;
+}
+.attribution ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  padding-block: 2rem 1rem;
+}
+.attribution ul li i {
+  color: var(--clr-txt-100);
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .attribution {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    max-width: 90%;
+  }
+  .attribution .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+  .attribution .main a {
+    margin-block: unset;
+  }
+  .attribution ul {
+    padding-block: unset;
+  }
+  .attribution ul li a i {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=App.css.map */
